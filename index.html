@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Cep com Mapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="card">
+            <form id="buscadorCep" method="get">
+                <div>
+                    <img src="icon/icons8-gps-96.png" alt="">
+                </div>
+                <div id="title">
+                    <h2>BUSQUE SEU CEP</h2>
+                </div>
+                <br><br>
+                <input type="number" required placeholder="Digite o CEP">
+                <br><br>
+                <button type="submit" >
+                    Buscar <img id="icon" src="icon/icons8-pesquisar-16.png" alt="">  </button>
+            </form>
+            <div id="infos"></div>
+            <br><br>
+            <div id="cred">
+                <p>Desenvolvido por: Samuel Rosário e Anthony Eike 
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=SGM_aC-CLgM" target="_blank">Clique Aqui!!!</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://opencagedata.com/api"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
